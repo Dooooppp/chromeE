@@ -1,0 +1,33 @@
+{
+   "background": {
+      "scripts": [ "js/background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "images/icon19.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "mytest_default_title"
+   },
+   "content_scripts": [ {
+      "css": [ "style/content.css" ],
+      "js": [ "js/content.js" ],
+      "matches": ["*://*.taobao.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "mytest_description",
+   "homepage_url": "https://www.baidu.com",
+   "icons": {
+      "128": "images/icon128.png",
+      "16": "images/icon16.png",
+      "48": "images/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA748IemAJYj+UWxsxAkAON4YUd/gFR8xqAS3JqKZfrKvp1kyYrEWkM0LIKsIhCdNbnxqpDP1HDqm8Jtd+oH5q2z62otlTa8A1u2c0qB/5AeUn0TN1lomltp395GwV2+M8UqiGZxdOhOq6MTcgsbzvDpa8iuczyf8IlxAcvHy1XsIXBpICflvClrpJsgEA4zRn0Yice1aBosv2JT93tbftmB553vZhhu2g6OLPrjsCCQ5BMMrhrtsaN1Ty3hl/8Y1WYJ1Q4OWnQEZIMuG+WymnsqSxwjglUiW5N6Z+3uLmeMFAXrEuiE6rk5pl1BuVL9FiiQZrkp3Dfm6wNMAfNGDJuQIDAQAB",
+   "manifest_version": 2,
+   "name": "mytest_name",
+   "permissions": [ "tabs", "storage", "*://*/*" ],
+   "short_name": "mytest_short_name",
+   "update_url": "http://upext.chrome.360.cn/intf.php?method=ExtUpdate.query",
+   "version": "1.0.0",
+   "web_accessible_resources": [ "style/*", "js/*", "images/*" ]
+}

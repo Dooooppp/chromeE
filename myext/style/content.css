@@ -1,0 +1,19 @@
+.zztest-div {
+  position: fixed;
+  top: 35px;
+  right: 0;
+  background-color: bisque;
+  padding: 10px;
+  overflow-y: auto;
+  height: 70%;
+}
+li.zztest-li {
+  max-width: 360px;
+}
+li.zztest-li > a {
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+}
